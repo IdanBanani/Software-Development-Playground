@@ -1,0 +1,7 @@
+start
+b exit
+b abort
+handle SIGALRM nostop
+handle SIGPIPE stop
+handle SIGALRM SIGPIPE pass
+c
